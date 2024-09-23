@@ -35,10 +35,10 @@ const Logistration = (props) => {
     providers, secondaryProviders,
   } = tpaProviders;
   const { formatMessage } = useIntl();
-  const [institutionLogin, setInstitutionLogin] = useState(false);
+  const [institutionLogin, setInstitutionLogin] = useState(true);
   const [key, setKey] = useState('');
   const navigate = useNavigate();
-  const disablePublicAccountCreation = getConfig().ALLOW_PUBLIC_ACCOUNT_CREATION === false;
+  const disablePublicAccountCreation = true;
 
   useEffect(() => {
     const authService = getAuthService();

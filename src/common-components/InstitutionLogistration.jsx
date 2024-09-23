@@ -56,12 +56,9 @@ const InstitutionLogistration = props => {
             {secondaryProviders.map(provider => (
               <tr key={provider} className="pgn__data-table-row">
                 <td>
-                  <Hyperlink
-                    className="btn nav-item p-0 mb-1 institutions--provider-link"
-                    destination={lmsBaseUrl + provider.loginUrl}
-                  >
+                  <a href={lmsBaseUrl + provider.loginUrl}>
                     {provider.name}
-                  </Hyperlink>
+                  </a>
                 </td>
               </tr>
             ))}
